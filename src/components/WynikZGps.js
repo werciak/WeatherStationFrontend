@@ -12,7 +12,7 @@ class WynikZGps extends Component{
           super(props);
           this.state = {
               center: {
-                  lat:51.9356214,
+                  lat: 31.9356214,
                   lng: 15.5061862
               },
               zoom: 15,
@@ -35,8 +35,12 @@ class WynikZGps extends Component{
         })
      
    }
+   
+
+
 }
    
+
   render() {
     if(this.props.weather.dlugosc === undefined){
         return(
@@ -44,11 +48,13 @@ class WynikZGps extends Component{
         )
     }
     const AnyReactComponent = ({ text }) => <div><h3>{text}</h3></div>;
-    
+
+
+
    
+    console.log(this.state.center.lat)
 
     return (
-       
 
       <div className="mapa">
         <GoogleMapReact

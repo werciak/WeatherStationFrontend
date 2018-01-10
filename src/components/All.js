@@ -10,7 +10,6 @@ class All extends Component {
 
   componentDidMount(){
    this.props.getAllMeasurements();
-   console.log(this.props.weather)
   }
 
   constructor() {
@@ -30,6 +29,7 @@ class All extends Component {
 
   render() {
    
+    console.log(this.props.weather.info)
     if(this.props.weather === undefined){
       return(
         <div>Loading..</div>
