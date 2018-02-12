@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "1.0.0",
-  "description": "Frontend for GTDer",
+  "description": "Frontend for Weather Station",
   "engines": {
     "npm": ">=3"
   },
